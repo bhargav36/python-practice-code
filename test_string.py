@@ -7,7 +7,7 @@ print(x)
 def to_lowercase(input):
 	return input.lower()
 
-name = "Bhargav Mistry"
+name = "Bob Alice"
 age = "32"
 length = 100
 # Calling function
