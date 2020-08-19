@@ -18,3 +18,5 @@ print(y)
 z=f"{name.upper()} is {age} years and his height is {length + 1} inches"
 print(z)
 
+print(f"Hi, {name}, hello from print function")
+
