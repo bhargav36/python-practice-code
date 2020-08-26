@@ -6,7 +6,7 @@ age = input()
 
 location = input("Enter your location:")
 
-# typecasting user input to integer value, by default input() is string
+# typecasting user input to integer and float value, by default input() is string
 number1 = int(input("Enter number1:"))
 number2 = float(input("Enter number2:"))
 total = number1 + number2
