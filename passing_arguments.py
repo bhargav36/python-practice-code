@@ -4,6 +4,7 @@ from sys import argv
 # importing datetime library
 from datetime import datetime
 
+
 script, user_name = argv
 prompt = '->'
 
