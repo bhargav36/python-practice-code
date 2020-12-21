@@ -1,9 +1,12 @@
 import requests
 import json
 
+# Dictionary for passing parameters in GET request
 parameter = { "lat": 40.71, "lon": -74}
 
 astros = requests.get('http://api.open-notify.org/astros.json')
+
+# Passing parameters using "params"
 iss = requests.get("http://api.open-notify.org/iss-pass.json", params = parameter)
 
 
