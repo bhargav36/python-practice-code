@@ -4,13 +4,13 @@ import ipaddress
 from datetime import datetime
 
 ##### Define target
+from pip._vendor.distlib.compat import raw_input
 
 host = raw_input("Enter Host IP: ")
-print(host)
 
 ##### Validate IP address
 ip = ipaddress.ip_address(host)
-target = socket.gethostbyname(host)
+target = socket.gethostname()
 
 ##### start scan
 
@@ -25,7 +25,7 @@ try:
         socket.setdefaulttimeout(1)
 
         # returns an error indicator
-        result = s.connect_ex((target, port))
+        result = s.connect_ex((host, port))
         if result == 0:
             print("Port {} is open".format(port))
         s.close()
