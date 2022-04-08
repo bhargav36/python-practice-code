@@ -7,6 +7,8 @@ from datetime import datetime
 
 host = raw_input("Enter Host IP: ")
 print(host)
+
+##### Validate IP address
 ip = ipaddress.ip_address(host)
 target = socket.gethostbyname(host)
 
@@ -17,7 +19,7 @@ print("Scanning started at: " + str(datetime.now()))
 
 try:
 
-    # will scan ports between 1 to 65,535
+    #### Scan ports between 1 to 65,535
     for port in range(1, 65535):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         socket.setdefaulttimeout(1)
